@@ -1,43 +1,23 @@
-# Figma - Gemini CLI extension
+# 🪦 [DEPRECATED] Gemini CLI Extension
 
-Welcome to Figma's Gemini CLI Extension. Currently this repo contains the config to connect to the remote Figma MCP server.
-The MCP Server brings important Figma context to AI agents generating code from Figma design files. With the server enabled, you can:
+### ⚠️ THIS REPOSITORY IS ARCHIVED
+This extension is no longer being maintained here. The functionality has been migrated and updated as part of our new **Model Context Protocol (MCP)** implementation.
 
-- **Generate code from selected frames**: Select a Figma frame and turn it into code. Great for product teams building new flows or iterating on app features.
+---
 
-- **Extract design context**: Pull in variables, components, and layout data directly into your IDE. This is especially useful for design systems and component-based workflows.
+## 🚀 Move to the New Repository
+The latest version of this extension and our improved implementation can now be found here:
 
-- **Keep your design system components consistent with Code Connect**: Boost output quality by reusing your actual components. Code Connect keeps your generated code consistent with your codebase.
+### **👉 [github.com/figma/mcp-server-guide](https://github.com/figma/mcp-server-guide)**
 
-To use this extension, you'll need to sign in through Figma's OAuth authentication flow and have either a Dev or Full seat on a Pro, Organization, or Enterprise plan. Once set up, the extension gives you a seamless way to access Figma data and integrate it with your tools.
+---
 
-## Installing Figma's Gemini CLI extension
+### Why the move?
+We have transitioned our Gemini integration to have access to skills in the canonical location for all MCP Server.
 
-Install the extension using the `gemini extensions install` command:
+### What should I do?
+1.  **Update your bookmarks:** Please point your links to the [new repository](https://github.com/figma/mcp-server-guide).
+2.  **Migration:** If you were using this CLI extension in your workflow, please follow the setup instructions in the new repository to switch to the MCP-based version.
+3.  **Forks:** If you have forked this repository, please note that no further security patches or feature updates will be pushed to this upstream.
 
-```bash
-gemini extensions install https://github.com/figma/figma-gemini-cli-extension
-```
-
-### Using Figma's Remote MCP server
-
-To take advantage of the Figma remote MCP server, you need to authenticate
-with Figma.
-
-1. Run `gemini`
-2. Run `/mcp auth figma` inside Gemini CLI to authenticate.
-
-Once you are authenticated you can ask Gemini CLI to implement Figma designs by
-sharing links to the files.
-
-### Figma Remote MCP Server Documentation
-
-- https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/
-
-## Uninstalling Figma's Gemini CLI extension
-
-Uninstall the extension using the `gemini extensions uninstall` command:
-
-```bash
-gemini extensions uninstall figma
-```
+*Thanks for being part of our developer community!*
